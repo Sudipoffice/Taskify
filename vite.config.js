@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["react-icons/bi"]
-    }
+      external: ['react-icons/fa'], // Add any external modules if needed
+    },
   },
-})
+});

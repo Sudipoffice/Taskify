@@ -1,6 +1,7 @@
 import {React, useState, useEffect } from "react";
 import { BiEditAlt } from "react-icons/bi";
 import { FaTrashAlt } from "react-icons/fa";
+import { FaIconName } from 'react-icons/fa';
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
