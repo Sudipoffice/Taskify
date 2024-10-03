@@ -123,7 +123,7 @@ function App() {
                   <div
                     className={`${
                       item.isCompleted ? "line-through  text-gray-300" : ""
-                    } w-48 lg:w-96 text-xl break-words`}
+                    } w-48 lg:w-[50vh] text-xl break-words`}
                   >
                     {item.todo}
                   </div>
@@ -134,7 +134,7 @@ function App() {
                   onClick={(e) => {
                     handleEdit(e, item.id);
                   }}
-                  className="hover:bg-gray-400 text-xl  px-2 h-9 w-9 rounded-3xl"
+                  className="px-1 hover:bg-gray-400 text-xl  lg:px-2 lg:h-9 lg:w-9 rounded-3xl"
                 >
                   <BiEditAlt />
                 </button>
@@ -142,7 +142,7 @@ function App() {
                   onClick={(e) => {
                     handleDelete(e, item.id);
                   }}
-                  className=" hover:bg-gray-400 mx-1 px-2.5 h-9 w-9 rounded-3xl"
+                  className=" px-2 mr-3 hover:bg-gray-400 lg:mx-1 lg:px-2.5 lg:h-9 lg:w-9 rounded-3xl"
                 >
                   <FaTrashAlt />
                 </button>
