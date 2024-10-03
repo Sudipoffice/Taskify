@@ -60,7 +60,7 @@ function App() {
 
   return (
     <>
-      <div className="container bg-gradient-to-r font-lexend from-cyan-500 to-blue-500 flex justify-start flex-col h-full w-full min-h-screen text-white">
+      <div className="overflow-hidden  bg-gradient-to-r font-lexend from-cyan-500 to-blue-500 flex justify-start flex-col h-full w-full min-h-screen text-white ">
         <h2 className="text-5xl p-10 flex justify-center font-bold">TASKIFY</h2>
         <div className="input flex flex-row justify-center">
           <input
@@ -68,11 +68,11 @@ function App() {
             onChange={handleChange}
             value={todo}
             type="text"
-            className="px-2 bg-gray-500 rounded-3xl h-10 w-80 focus:outline-none focus:ring-0"
+            className="h-12 w-64 px-4 bg-gray-500 rounded-3xl lg:h-10 lg:w-80 focus:outline-none focus:ring-0"
           />
           <button
             onClick={handleAdd}
-            className="bg-blue-400 hover:bg-blue-300 mx-2 px-2 rounded-3xl focus:outline-none focus:ring-0"
+            className=" bg-blue-400 hover:bg-blue-300 mx-2 px-2 rounded-3xl focus:outline-none focus:ring-0"
           >
             Add
           </button>
@@ -90,7 +90,7 @@ function App() {
           {todos.map((item) => (
             <div
               key={item.id}
-              className="flex flew-row justify-start items-center my-2 w-2/5 bg-gray-500 py-2.5 rounded-3xl relative"
+              className=" w-5/6 flex flew-row justify-start items-center my-2 lg:w-2/5 bg-gray-500 py-2.5 rounded-3xl relative"
             >
               <div className="flex  items-center">
                 <input
@@ -123,7 +123,7 @@ function App() {
                   <div
                     className={`${
                       item.isCompleted ? "line-through  text-gray-300" : ""
-                    }  w-96 text-xl break-words`}
+                    } w-48 lg:w-96 text-xl break-words`}
                   >
                     {item.todo}
                   </div>
